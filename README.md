@@ -11,17 +11,18 @@ Things you may want to cover:
 
 * Configuration
 
-* Database creation
+* Routes
+** List
+rails routes --expanded
 
-* Database initialization
+* Database
+** Create a Migration Table
+rails generate migration create_articles
 
-* Create Migration Table
-rails generate generate migration create_articles
-
-* Run Database Migration
+** Run Migration
 rails db:migrate
 
-* Run Database Rollback Migration
+** Run Migration Rollback
 rails db:rollback
 
 * How to run the test suite
@@ -33,5 +34,8 @@ rails generate scaffold Article title:string description:text
 
 * Deployment instructions
 
-* Run Application
+* Run
+** Application
 rails s
+** Rails Console
+rails c
